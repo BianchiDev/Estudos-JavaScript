@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores em JavaScript</title>
+    <style>
+       /* Estiliza o corpo da página */
+body {
+    /* Define a fonte usada na página. 'Arial' é a fonte principal; 'sans-serif' é uma alternativa genérica */
+    font-family: Arial, sans-serif;
+
+    /* Define a cor de fundo da página usando um tom de cinza claro (#f4f4f4) */
+    background-color: #f4f4f4;
+
+    /* Define a cor do texto na página usando um tom de cinza escuro (#333) */
+    color: #333;
+
+    /* Adiciona espaço interno ao redor do conteúdo da página (20px em todos os lados) */
+    padding: 20px;
+}
+
+/* Estiliza os blocos de código formatado */
+pre {
+    /* Define a cor de fundo do bloco de código com um tom de cinza escuro (#333) */
+    background-color: #333;
+
+    /* Define a cor do texto dentro do bloco de código como branco (#fff) para contraste */
+    color: #fff;
+
+    /* Adiciona espaço interno ao redor do texto dentro do bloco de código (15px em todos os lados) */
+    padding: 15px;
+
+    /* Arredonda os cantos do bloco de código com um raio de 5 pixels */
+    border-radius: 5px;
+
+    /* Permite a rolagem horizontal se o conteúdo do bloco de código exceder a largura do contêiner */
+    overflow-x: auto;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Resultado das Operações em JavaScript</h1>
+    <pre id="output"></pre>
+
+    <script>
+        let n1 = 10;
+        let n2 = 3;
+
+        let output = "Operadores Aritiméticos\n";
+        output += n1 + " + " + n2 + " = " + (n1 + n2) + "\n";
+        output += n1 + " - " + n2 + " = " + (n1 - n2) + "\n";
+        output += n1 + " * " + n2 + " = " + (n1 * n2) + "\n";
+        output += n1 + " / " + n2 + " = " + (n1 / n2) + "\n";
+        output += n1 + " % " + n2 + " = " + (n1 % n2) + "\n\n";
+
+        output += "Operadores de atribuição\n";
+        let n3 = 20;
+        n3 += 2;
+        output += "n3 += 2 -> " + n3 + "\n";
+        n3 -= 2;
+        output += "n3 -= 2 -> " + n3 + "\n";
+        n3 *= 3;
+        output += "n3 *= 3 -> " + n3 + "\n";
+        n3 /= 2;
+        output += "n3 /= 2 -> " + n3 + "\n";
+        n3 **= 2;
+        output += "n3 **= 2 -> " + n3 + "\n";
+        n3 %= 3;
+        output += "n3 %= 3 -> " + n3 + "\n\n";
+
+        output += "Incremento e Decremento\n";
+        let i = 0;
+        output += "i-- -> " + i-- + "\n";
+        i++;
+        i++;
+        i++;
+        output += "Valor final de i -> " + i + "\n";
+
+        document.getElementById("output").textContent = output;
+    </script>
+</body>
+</html>
